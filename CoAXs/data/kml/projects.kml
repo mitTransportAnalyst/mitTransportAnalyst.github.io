@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>projects.kml</name>
+	<Style id="sh_wht-blank">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_wht-blank">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_wht-blank</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_wht-blank</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_wht-blank">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Folder>
+		<name>Projects</name>
+		<open>1</open>
+		<Placemark>
+			<name>LA Metro</name>
+			<description>lax</description>
+			<LookAt>
+				<longitude>-118.2328869645236</longitude>
+				<latitude>34.05171832088169</latitude>
+				<altitude>0</altitude>
+				<heading>-13.26899924186138</heading>
+				<tilt>8.219432134148649</tilt>
+				<range>3301.54448958419</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-blank</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.2329208488706,34.05617943549154,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>The Urban Ring</name>
+			<description>bost</description>
+			<LookAt>
+				<longitude>-71.07550122553543</longitude>
+				<latitude>42.34258352035518</latitude>
+				<altitude>0</altitude>
+				<heading>0.06500978077418794</heading>
+				<tilt>9.037686107953926</tilt>
+				<range>5855.246854953682</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-blank</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-71.08322364778789,42.33050430396886,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Magazine Commons</name>
+			<description>mgzb
+</description>
+			<LookAt>
+				<longitude>-71.10816570617499</longitude>
+				<latitude>42.35764238903836</latitude>
+				<altitude>0</altitude>
+				<heading>0.04714434372056953</heading>
+				<tilt>23.5148144503307</tilt>
+				<range>1463.61183939882</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-blank</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-71.11499367625316,42.35760453111177,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parque Tercer Milenio</name>
+			<description>bgta</description>
+			<Camera>
+				<longitude>-74.08046061222115</longitude>
+				<latitude>4.59478789290637</latitude>
+				<altitude>894.1840251790302</altitude>
+				<heading>-8.593265507267399</heading>
+				<tilt>21.37277066898134</tilt>
+				<roll>1.585661351305931</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_wht-blank</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-74.08134807489815,4.597788505438594,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>School Bus Migrations</name>
+			<description>pana</description>
+			<LookAt>
+				<longitude>-79.51908663888123</longitude>
+				<latitude>8.975366635767792</latitude>
+				<altitude>0</altitude>
+				<heading>4.400916330934563</heading>
+				<tilt>0</tilt>
+				<range>829.1484964348596</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-blank</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-79.51908663888123,8.975366635767792,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>School Bus Migrations</name>
+			<description>nica</description>
+			<LookAt>
+				<longitude>-86.25900509758</longitude>
+				<latitude>12.12946378357804</latitude>
+				<altitude>0</altitude>
+				<heading>2.462249807178183</heading>
+				<tilt>7.252269262377472</tilt>
+				<range>3206.813061538446</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-blank</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-86.26267971645932,12.13023988786155,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>School Bus Migrations</name>
+			<description>arge</description>
+			<Camera>
+				<longitude>-58.39052869422164</longitude>
+				<latitude>-34.60425631884112</latitude>
+				<altitude>1168.502838243071</altitude>
+				<heading>103.1787628163042</heading>
+				<tilt>0.02139078352863741</tilt>
+				<roll>89.00473169436511</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_wht-blank</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-58.39052405862768,-34.60425721244036,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>School Bus Migrations</name>
+			<description>soaf
+</description>
+			<LookAt>
+				<longitude>18.42896321762157</longitude>
+				<latitude>-33.92021086425325</latitude>
+				<altitude>0</altitude>
+				<heading>20.72036554949386</heading>
+				<tilt>0</tilt>
+				<range>277.3879739183402</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-blank</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>18.42896321762157,-33.92021086425326,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Wuchengcun</name>
+			<description>chin
+</description>
+			<LookAt>
+				<longitude>112.5711464525728</longitude>
+				<latitude>37.80594720175741</latitude>
+				<altitude>0</altitude>
+				<heading>-0.08372818721685414</heading>
+				<tilt>0</tilt>
+				<range>1759.91910178388</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-blank</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>112.5711464525728,37.80594720175741,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

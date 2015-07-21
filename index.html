@@ -122,7 +122,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>CoAXs 0.1</h2>
-				<p>A basic proof-of-concept process built around open-source interactive mapping tools was tested for BRT corridor planning with stakeholder groups in Boston and Santiago de Chile.  More <a href="http://dspace.mit.edu/handle/1721.1/92057">info</a>.</p>
+				<p>A basic proof-of-concept process built around open-source interactive mapping tools and data (see <a href="http://www.opentripplanner.org/analyst/">Open Trip Planner Analyst</a>) was tested for BRT corridor planning with stakeholder groups in Boston and Santiago de Chile.  More <a href="http://dspace.mit.edu/handle/1721.1/92057">info</a>.</p>
 				
 				<img src="img/stgo-interface2.JPG" height = 250>   <img src="img/Twitter.JPG" height=250>
 								
@@ -136,37 +136,13 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>CoAXs 1.0</h2>
-                    
 					<p>With support from the Barr Foundation, a full pilot is being launched this summer in Boston.  Stay tuned.</p>
-					
-					<!--<div class="embed-responsive embed-responsive-16by9"></div> -->
-					
 					<br>
-					<!--
-					<div class="row">
-  <div class="col-xs-6 col-md-3">
-    <div class="thumbnail">
-      <img data-src="/img/map-marker.png" alt="marker">
-	  <div class="caption">
-        <h3>School Bus Migrations</h3>
-        <p>Recycled transit</p>
-    </div>
-	<div class="thumbnail">
-      <img data-src="/img/map-marker.png" alt="marker">
-	  <div class="caption">
-        <h3>Parque Tercer Milenio</h3>
-        <p>Transport and urban design strategies</p>
-    </div>
-</div> -->
-					
-					
                 </div>
             </div>
         </div>
     </section>
 	
-    <!-- Map Section -->
-    <!-- <div id="map"></div> -->
 
 	<section id="demo" class="container content-section text-justify">
 	<div class="row">
@@ -174,17 +150,17 @@
 			
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Demo</h2>
-					<p>(Still a work in progress)</p>
+					<p>(Client application for Open Trip Planner/<a href="http://conveyal.com/projects/analyst/">Transport Analyst</a>; Still a work in progress)</p>
 					<a href="https://coaxs-staging.herokuapp.com/#/maps" class="btn btn-default btn-lg">Demo</a> 
 					<br>
 					
 					<p>Consider the case of the Fairmount Line, a corridor for which <a href="http://bostononthemove.org/take-action/">advocacy groups</a> have won some important initial upgrades and new stations.  As they continue to build public support for first-class transit in this corridor, how can they work with MassDOT and MBTA planners to understand the benefits of frequent service and move from an Indigo Line on a map to real improvements in how residents can connect with opportunities?</p>
 					
-					<p>The two maps below show travel times from the Talbot Avenue Station.  "Scenario 1" excludes all Fairmount Line Service.  "Scenario 2" includes current Fairmount Line Service.  The blue areas can be reached more quickly in Scenario 2 (i.e. using the Fairmount Line) than in Scenario 1, while yellow areas are those for which the Fairmount Line does not provide an advantage.</p>
+					<p>The two maps below show travel times from the Talbot Avenue Station, with differing assumptions about how passengers arrive at stops (about which more below).  "Scenario 1" in both maps excludes all Fairmount Line Service.  "Scenario 2" in both maps includes current Fairmount Line Service.  The blue areas can be reached more quickly in Scenario 2 (i.e. using the Fairmount Line) than in Scenario 1, while yellow areas are those for which the Fairmount Line does not provide an advantage.</p>
 					
 					<img src="img/Talbot2.jpg" height=200>  <img src="img/Talbot1.jpg" height=200>
 					
-					<p>We can start to get a sense of the effect of better Fairmount Line frequency by comparing different measures of accessibility.  Worst case/lower bound accessibility assumes that you start your trip at the worst possible time, just missing a vehicle leaving on your first trip.  Best case/upper bound accessibility assumes that you time your departure to minimize waiting time.  On average, travelers experience something in between these bounds.  As frequency on the Fairmount Line increases from today's level, the lower bound will start moving up.  With sufficiently good frequency on the Fairmount Line, it will approach the best case accessibility, saving up to 10-15 minutes for travelers heading downtown from Talbot Ave.</p>
+					<p>We can start to get a sense of the effect of better Fairmount Line frequency by comparing different measures of accessibility.  The left map (worst case/lower bound accessibility) is based on the assumption that passengers start their trip at the worst possible time, just missing a vehicle leaving the first stop.  The right map (best case/upper bound accessibility) assumes that passengers time their access to the first stop to minimize waiting time at the stop.  On average, travelers experience something in between these bounds.  As frequency on the Fairmount Line increases from today's level, the lower bound will start moving up.  With sufficiently good frequency on the Fairmount Line, it will approach the best case accessibility, saving up to 10-15 minutes for travelers heading downtown from Talbot Ave.</p>
 
 					<p>For more on how the best case and worst case are calculated, see <a href="http://conveyal.com/blog/2015/01/09/service-variation/">these</a> <a href="http://conveyal.com/blog/2015/05/04/variation-in-accessibility-measures/">posts</a> on <a href="http://conveyal.com">Conveyal's</a> blog.</p>
 					

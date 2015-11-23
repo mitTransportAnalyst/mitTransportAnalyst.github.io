@@ -24,7 +24,6 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
@@ -64,7 +63,6 @@ a:focus {
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
 }
@@ -137,13 +135,22 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
+	background-color: rgba(255,255,255,0.4);
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.intro video{
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	z-index:-10; 
+	width:100%;
+	max-height:100%;
+	overflow:hidden;
 }
 
 .demoIntro {
@@ -167,13 +174,18 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
-	text-shadow: 0 4px 8px rgba(0, 0, 0, .6);
+    text-transform: none;
+	font-size: 40px;
+	text-shadow: 0 8px 16px rgba(0, 0, 0, .8);
 }
 
 .intro .intro-body .intro-text {
     font-size: 18px;
-	text-shadow: 0 2px 4px rgba(0, 0, 0, .6);
+	text-shadow: 0 4px 8px rgba(0, 0, 0, .8);
+}
+
+.intro .intro-body a {
+	text-shadow: 0 4px 8px rgba(0, 0, 0, .8);
 }
 
 @media(min-width:767px) {
@@ -303,7 +315,6 @@ a:focus {
 }
 
 .btn {
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;

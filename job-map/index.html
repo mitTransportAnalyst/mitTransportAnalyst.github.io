@@ -1,8 +1,183 @@
 <html>
 <head>
-<title>Jobs in Boston</title>
+<title>Job Map</title>
+
+<meta name="keywords" content="Jobs, in, Boston, datasets, maps, data visualization, spatial data, geospatial, CARTO">
+    <meta name="author" content="ansoncfit">
+    <meta charset='utf-8' />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <meta property="og:title" content="Jobs in Boston" />
+    <meta property="og:site_name" content="CARTO" />
+    <meta property="og:description" content="Jobs (according to 2014 LEHD data) in the MBTA primary and secondary assessment districts, by industry and wage. Map created by  in CARTO" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://ansoncfit.carto.com/viz/73156de8-9b48-11e6-a28c-0e05a8b3e3d7/embed_map" />
+    <meta property="og:image" content="https://cartocdn-ashbu.global.ssl.fastly.net/ansoncfit/api/v1/map/static/named/tpl_73156de8_9b48_11e6_a28c_0e05a8b3e3d7/1200/630.png">
+      <meta property="fb:app_id" content="204330262947622" />
+      <meta property="fb:admins" content="500593636634213" />
+    <meta property="article:publisher" content="https://www.facebook.com/cartodb" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cartodb">
+    <meta name="twitter:title" content="Jobs in Boston">
+    <meta name="twitter:description" content="Jobs (according to 2014 LEHD data) in the MBTA primary and secondary assessment districts, by industry and wage. Map created by  in CARTO">
+    <meta name="twitter:image" content="https://cartocdn-ashbu.global.ssl.fastly.net/ansoncfit/api/v1/map/static/named/tpl_73156de8_9b48_11e6_a28c_0e05a8b3e3d7/560/300.png">
+
+<link rel="stylesheet" href="css/jobmap.css" />
+	
+<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
-<iframe width="100%" height="100%" frameborder="0" src="https://ansoncfit.carto.com/viz/73156de8-9b48-11e6-a28c-0e05a8b3e3d7/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+<div class="container-fluid" style="background-color:#111">
+ 
+ <div class = "row" style="margin-top: 5px">
+  <div id="los-mapcol" class="col-md-4 col-sm-12">
+   <div id="losTitle" class="btn btn-default city">
+   LA
+   </div>
+   <span class="stat">4.1 million jobs in 2014</span>
+  <div id="los" class="lmap">
+  </div>
+  </div>
+  <div id="bos-mapcol" class="col-md-4 col-sm-12">
+  <div id="bosTitle" class="btn btn-default city">
+   BOS
+   </div>
+   <span class="stat">1.3 million jobs in 2014</span>
+  <div id="bos" class="lmap">
+  </div>
+  </div>
+  <div id="lon-mapcol" class="col-md-4 col-sm-12">
+   <div id="lonTitle" class="btn btn-default city">
+   LDN
+   </div>
+   <span class="stat">4.7 million jobs in 2011</span>
+  <div id="lon" class="mbmap">
+  </div>
+  <span class="stat">Note: London jobs not classified by earnings.</span>
+  </div>
+ </div>
+ <div id="legend" class="row">
+ 
+<div class="legend-title">One dot = One job</div>
+
+<div class="col-md-1 col-sm-3 col-xs-6 legend-col">
+
+		<div class="industry">Manufact. &amp; Constr.</div>
+		<a title="Manufacturing &amp; Construction" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$0-15k per year"><div class="bullet" style="background:#a65628"></div></a>
+		<a title="Manufacturing &amp; Construction" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$15-40k per year"><div class="bullet" style="background:#ba6a3c"></div></a>
+		<a title="Manufacturing &amp; Construction" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="over $40k per year"><div class="bullet" style="background:#ce7e50"></div></a>
+</div>
+<div class="col-md-1 col-sm-2 col-xs-6 legend-col">
+		<div class="industry">Retail &amp; Wholesale</div>
+		<a title="Retail &amp; Wholesale" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$0-15k per year"><div class="bullet" style="background:#E41A1C"></div></a>
+		<a title="Retail &amp; Wholesale" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$15-40k per year"><div class="bullet" style="background:#F82E30"></div></a>
+		<a title="Retail &amp; Wholesale" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="over $40k per year"><div class="bullet" style="background:#FF4244"></div></a>
+</div>
+<div class="col-md-1 col-sm-2 col-xs-6 legend-col">
+		<div class="industry">Utilities &amp; Transport</div>
+		<a title="Utilities &amp; Transport" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$0-15k per year"><div class="bullet" style="background:#FFFF33"></div></a>
+		<a title="Utilities &amp; Transport" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$15-40k per year"><div class="bullet" style="background:#FFFF47"></div></a>
+		<a title="Utilities &amp; Transport" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="over $40k per year"><div class="bullet" style="background:#FFFF61"></div></a>
+</div>
+<div class="col-md-1 col-sm-2 col-xs-6 legend-col">
+	<div class="industry">Information Services</div>
+		<a title="Information Services" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$0-15k per year"><div class="bullet" style="background:#46DFD3">
+        </div></a>
+		<a title="Information Services" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$15-40k per year"><div class="bullet" style="background:#5AF3E7"></div></a>
+		<a title="Information Services" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="over $40k per year"><div class="bullet" style="background:#6EFFFB"></div></a>
+</div>
+<div class="col-md-1 col-sm-2 col-xs-6 legend-col">
+		<div class="industry">Professional Services</div>
+		<a title="Professional Services" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$0-15k per year"><div class="bullet" style="background:#a6cee3"></div></a>
+		<a title="Professional Services" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$15-40k per year"><div class="bullet" style="background:#bae2f7"></div></a>
+		<a title="Professional Services" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="over $40k per year"><div class="bullet" style="background:#cef6ff"></div></a>
+</div>
+<div class="col-md-1 col-sm-2 col-xs-6 legend-col">
+		<div class="industry">Finance</div>
+		<a title="Finance" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$0-15k per year"><div class="bullet" style="background:#00AA0E">
+    </div></a>
+		<a title="Finance" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$15-40k per year"><div class="bullet" style="background:#14BE22"></div></a>
+		<a title="Finance" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="over $40k per year"><div class="bullet" style="background:#28D236"></div></a>
+</div>
+<div class="col-md-1 col-sm-2 col-xs-6 legend-col">
+		<div class="industry">Education</div>
+		<a title="Education" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$0-15k per year"><div class="bullet" style="background:#6A3D9A"></div></a>
+		<a title="Education" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$15-40k per year"><div class="bullet" style="background:#7E51AE"></div></a>
+		<a title="Education" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="over $40k per year"><div class="bullet" style="background:#9265C2"></div></a>
+</div>
+<div class="col-md-1 col-sm-2 col-xs-6 legend-col">
+		<div class="industry">Health Care</div>
+		<a title="Health Care" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$0-15k per year"><div class="bullet" style="background:#286faa">
+        </div></a>
+		<a title="Health Care" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$15-40k per year"><div class="bullet" style="background:#3c83be"></div></a>
+		<a title="Health Care" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="over $40k per year"><div class="bullet" style="background:#5097d2"></div></a>
+</div>
+<div class="col-md-1 col-sm-2 col-xs-6 legend-col">
+		<div class="industry">Hospitality</div>
+		<a title="Hospitality and Entertainment" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$0-15k per year"><div class="bullet" style="background:#FB9A99">
+    </div></a>
+		<a title="Hospitality and Entertainment" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$15-40k per year"><div class="bullet" style="background:#FFAEAD"></div></a>
+		<a title="Hospitality and Entertainment" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="over $40k per year"><div class="bullet" style="background:#FFC2C1"></div></a>
+</div>
+<div class="col-md-1 col-sm-2 col-xs-6 legend-col">
+		<div class="industry">Government</div>
+		<a title="Government and Public Administration" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$0-15k per year"><div class="bullet" style="background:#FF7F00"></div></a>
+		<a title="Government and Public Administration" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="$15-40k per year"><div class="bullet" style="background:#FF9314"></div></a>
+		<a title="Government and Public Administration" data-trigger="hover" data-toggle="popover" data-placement="auto right" data-content="over $40k per year"><div class="bullet" style="background:#FFA728"></div></a>
+	</div>
+</div>
+<div id="attribution" class="row">
+ <div class="col-md-2 col-sm-6">
+ Compiled by Anson Stewart
+ <div style="position:relative; right:0px">
+ <a href="https://twitter.com/intent/tweet?text=Mapping+job+density+in+LA,+Boston,+and+London&via=ansoncfit&url=http://coaxs.mit.edu/job-map/" class="twitter-share-button" data-size="large">Tweet</a>
+ </div>
+ </div>
+ <div class="col-md-2 col-sm-6">
+ Inspired by <a href="http://fragile-success.rpa.org/maps/jobs.html">Access to jobs (RPA)</a>, <a href="http://www.coopercenter.org/demographics/Racial-Dot-Map">Racial Dot Map (Weldon Cooper Center)</a>, and <a href="http://www.robertmanduca.com/projects/jobs.html">Where are the Jobs (Robert Manduca)</a>?
+ </div>
+ <div class="col-md-8 col-sm-12">
+ Job data reported at block/workplace zone level, then distributed randomly into building footprints within each zone according to building volume/area using <a href="https://github.com/conveyal/aggregate-disser">aggregate-disser</a>. Locations from administrative records (e.g. the address of a company's headquarters) may not align with actual commuting destinations.
+ </div>
+ 
+
+ 
+</div>
+
+<!-- <iframe width="100%" height="100%" frameborder="0" src="https://ansoncfit.carto.com/viz/73156de8-9b48-11e6-a28c-0e05a8b3e3d7/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/jobmap.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57681852-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </body>
 </html>
+
+<!-- los_map
+-->

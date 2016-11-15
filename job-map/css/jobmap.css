@@ -1,0 +1,58 @@
+.lmap, .mbmap {
+  width:100%;
+  height:90%;
+  margin-top: 5px;
+}
+
+#legend, .stat {
+  font-family: 'Droid Sans';
+  color: #fff;
+}
+
+.legend-col:nth-child(odd){
+  background-color: #333333;
+}
+
+.legend-col:nth-child(even){
+  background-color: #222222;
+}
+
+.legend-title {
+  margin-bottom: 10px;
+  margin-left: 15px
+}
+
+#attribution {
+  font-family: 'Droid Sans';
+  font-size: 8pt;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.btn {
+  font-family: 'Droid Sans';
+}
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  border-radius:5px;
+  position: relative;
+  margin-bottom: 10px;
+  top: 5px;
+  left: 40%;
+}
+
+.industry{
+  margin-top: 10px;
+  height: 60px;
+}
+
+#attribution div {
+  margin-top: 10px;
+}
+
+.popover {
+  color: #000000;
+  width: 200px;
+}
